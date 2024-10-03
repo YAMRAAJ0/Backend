@@ -1,7 +1,6 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
 import User from '../models/User';
-import passport from 'passport';
 import dotenv from 'dotenv';
 
 dotenv.config();

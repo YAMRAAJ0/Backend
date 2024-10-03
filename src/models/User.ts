@@ -1,44 +1,67 @@
-// import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Document, Model } from 'mongoose';
+import bcrypt from 'bcryptjs';
 
-// export interface IUser extends Document {
-//   name: string;
-//   email: string;
-//   password: string;
-// }
+// Define an interface for the User schema
+interface IUser extends Document {
+    name: string;
+    email: string;
+    password: string;
+    matchPassword(enteredPassword: string): Promise<boolean>;
+}
 
-// const userSchema: Schema = new Schema({
-//   name: { type: String, required: true },
-//   email: { type: String, required: true, unique: true },
-//   password: { type: String, required: true },
-// });
-
-// const User = mongoose.model<IUser>('User', userSchema);
-// export default User;
-
-
-import mongoose from 'mongoose';
-
-const userSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true, // Ensure this field is required
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true, // Ensure email is unique
-  },
-  password: {
-    type: String,
-    required: true,
-  },
+// Define the User schema
+const userSchema = new mongoose.Schema<IUser>({
+    name: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
 }, {
-  timestamps: true, // Optional: adds createdAt and updatedAt timestamps
+    timestamps: true,
 });
 
-const User = mongoose.model('User', userSchema);
+// Hash the password before saving the user
+userSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) {
+        next();
+    }
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+});
 
+// Method to match the password during login
+userSchema.methods.matchPassword = async function (enteredPassword: string) {
+    return await bcrypt.compare(enteredPassword, this.password);
+};
+
+// Export the User model
+const User: Model<IUser> = mongoose.model('User', userSchema);
 export default User;
+
+
+
+
+// import mongoose from 'mongoose';
+
+// const userSchema = new mongoose.Schema({
+//   name: {
+//     type: String,
+//     required: true, // Ensure this field is required
+//   },
+//   email: {
+//     type: String,
+//     required: true,
+//     unique: true, // Ensure email is unique
+//   },
+//   password: {
+//     type: String,
+//     required: true,
+//   },
+// }, {
+//   timestamps: true, // Optional: adds createdAt and updatedAt timestamps
+// });
+
+// const User = mongoose.model('User', userSchema);
+
+// export default User;
 
 
 
