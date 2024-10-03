@@ -7,6 +7,7 @@ import courseRoutes from './routes/courseRoutes';
 import certificateRoutes from './routes/certificateRoutes';
 import register from './routes/registerUser'; 
 import cors from 'cors';
+import path from 'path';
 dotenv.config();
 
 const app: Application = express();
@@ -23,33 +24,8 @@ app.use('/auth/register', register); // Handles registration
 app.use('/users', userRoutes);
 app.use('/courses', courseRoutes);
 app.use('/certificates', certificateRoutes);
-
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 export default app;
 
 
 
-// // /src/app.ts
-// import express from 'express';
-// import bodyParser from 'body-parser';
-// import passport from './config/passport';
-// import connectDB from './config/db';
-// import authRoutes from './routes/authRoutes';
-// import userRoutes from './routes/userRoutes';
-// import courseRoutes from './routes/courseRoutes';
-// import certificateRoutes from './routes/certificateRoutes';
-
-// const app = express();
-
-// app.use(bodyParser.json());
-// app.use(passport.initialize());
-
-// connectDB();
-
-// app.use('/auth', authRoutes);
-// app.use('/users', userRoutes);
-// app.use('/courses', courseRoutes);
-// app.use('/certificates', certificateRoutes);
-
-// app.listen(5000, () => {
-//   console.log('Server running on http://localhost:5000');
-// });
