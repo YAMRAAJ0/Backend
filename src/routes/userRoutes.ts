@@ -1,12 +1,25 @@
-import express from 'express';
-import { getuser_data } from '../controllers/userController';
+// import express from 'express';
+// import { getuser_data } from '../controllers/userController';
 
-const router = express.Router();
+// const router = express.Router();
 
+// router.get('/', getuser_data);
+
+// export default router;
+
+
+import { Router } from 'express';
+import { getuser_data,createUser, updateUser, deleteUser } from '../controllers/userController';
+
+const router = Router();
+
+// Ensure this route is correct
 router.get('/', getuser_data);
+router.post('/', createUser);
+router.put('/:id', updateUser);
+router.delete('/:id', deleteUser);
 
 export default router;
-
 
 
 

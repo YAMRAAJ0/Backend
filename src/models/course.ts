@@ -1,19 +1,45 @@
-import mongoose, { Schema, Document } from 'mongoose';
+// import mongoose, { Schema, Document } from 'mongoose';
 
-export interface ICourse extends Document {
-  title: string;
-  description: string;
-  duration: number;
-}
+// export interface ICourse extends Document {
+//   title: string;
+//   description: string;
+//   duration: number;
+// }
 
-const courseSchema: Schema = new Schema({
+// const courseSchema: Schema = new Schema({
+//   title: { type: String, required: true },
+//   description: { type: String, required: true },
+//   duration: { type: Number, required: true },
+// });
+
+// const Course = mongoose.model<ICourse>('Course', courseSchema);
+// export default Course;
+// src/models/course.ts
+// import mongoose from 'mongoose';
+
+// const courseSchema = new mongoose.Schema({
+//   title: { type: String, required: true },
+//   description: { type: String, required: true },
+//   duration: { type: String, required: true },
+//   image: { type: String }, // Field to store image path
+// }, { timestamps: true });
+
+// const Course = mongoose.model('Course', courseSchema);
+
+// export default Course;
+
+
+// src/models/course.ts
+import mongoose from 'mongoose';
+
+const courseSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
-  duration: { type: Number, required: true },
+  duration: { type: String, required: true },
+  image: { type: String, required: true } // Assuming you want to store the image path
 });
 
-const Course = mongoose.model<ICourse>('Course', courseSchema);
-export default Course;
+export default mongoose.model('Course', courseSchema);
 
 
 
