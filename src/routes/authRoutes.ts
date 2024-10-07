@@ -1,5 +1,3 @@
-// src/routes/auth.ts
-
 import express from 'express';
 import { getauth_data } from '../controllers/authController';
 
@@ -34,9 +32,10 @@ const router = express.Router();
  *       400:
  *         description: Bad request
  */
-router.post('/', getauth_data);  // Authenticate user
+router.post('/', getauth_data);
 
 export default router;
+
 
 
 

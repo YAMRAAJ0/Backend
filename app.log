@@ -1,0 +1,60 @@
+2024-10-07T09:50:50.161Z [INFO]: Authentication attempt for email: tio@gmail.com
+2024-10-07T09:50:50.295Z [INFO]: User authenticated successfully: tio@gmail.com
+2024-10-07T09:51:41.023Z [INFO]: Authentication attempt for email: dfsgfgjhdfg@gmail.com
+2024-10-07T09:51:41.061Z [WARN]: Invalid login attempt for email: dfsgfgjhdfg@gmail.com
+2024-10-07T09:52:00.830Z [INFO]: Authentication attempt for email: test@gmail.com
+2024-10-07T09:52:00.879Z [WARN]: Invalid login attempt for email: test@gmail.com
+2024-10-07T09:52:16.840Z [INFO]: Authentication attempt for email: tio@gmail.com
+2024-10-07T09:52:16.944Z [INFO]: User authenticated successfully: tio@gmail.com
+2024-10-07T10:01:00.872Z [INFO]: New user registered successfully: naveen@gmail.com
+2024-10-07T10:01:00.874Z [INFO]: JWT token generated for user: naveen@gmail.com
+2024-10-07T10:01:28.612Z [INFO]: Authentication attempt for email: naveen@gmail.com
+2024-10-07T10:01:28.715Z [WARN]: Invalid login attempt for email: naveen@gmail.com
+2024-10-07T10:02:05.705Z [INFO]: Authentication attempt for email: tio@gmail.com
+2024-10-07T10:02:05.807Z [INFO]: User authenticated successfully: tio@gmail.com
+2024-10-07T10:06:07.121Z [INFO]: Fetched all certificates
+2024-10-07T10:06:07.171Z [INFO]: Fetched all certificates
+2024-10-07T10:06:14.671Z [INFO]: Certificate deleted: sfdsf
+2024-10-07T10:06:26.249Z [INFO]: Certificate updated: sdfdsdfghf
+2024-10-07T10:08:20.581Z [INFO]: Fetched all courses
+2024-10-07T10:08:20.626Z [INFO]: Fetched all courses
+2024-10-07T10:08:45.031Z [INFO]: Fetched all certificates
+2024-10-07T10:08:45.080Z [INFO]: Fetched all certificates
+2024-10-07T10:08:46.708Z [INFO]: Fetched all courses
+2024-10-07T10:08:46.752Z [INFO]: Fetched all courses
+2024-10-07T10:08:50.640Z [INFO]: Fetched all certificates
+2024-10-07T10:08:50.685Z [INFO]: Fetched all certificates
+2024-10-07T10:08:52.459Z [INFO]: Fetched all courses
+2024-10-07T10:08:52.508Z [INFO]: Fetched all courses
+2024-10-07T10:08:56.474Z [INFO]: Fetched all courses
+2024-10-07T10:08:56.515Z [INFO]: Fetched all courses
+2024-10-07T10:09:02.430Z [INFO]: Course deleted: rdsefgtdf
+2024-10-07T10:11:25.785Z [INFO]: Fetched all certificates
+2024-10-07T10:11:25.841Z [INFO]: Fetched all certificates
+2024-10-07T10:11:27.599Z [INFO]: Fetched all users
+2024-10-07T10:11:27.639Z [INFO]: Fetched all users
+2024-10-07T10:11:37.477Z [INFO]: Fetched all courses
+2024-10-07T10:11:37.515Z [INFO]: Fetched all courses
+2024-10-07T10:11:40.690Z [INFO]: Fetched all users
+2024-10-07T10:11:40.729Z [INFO]: Fetched all users
+2024-10-07T10:26:09.566Z [INFO]: Fetched all users
+2024-10-07T10:27:14.744Z [INFO]: Fetched all users
+2024-10-07T10:27:24.062Z [INFO]: Fetched all users
+2024-10-07T10:27:25.499Z [INFO]: Fetched all users
+2024-10-07T10:27:29.889Z [INFO]: Fetched all users
+2024-10-07T10:27:33.800Z [INFO]: Fetched all users
+2024-10-07T10:27:41.992Z [INFO]: Fetched all users
+2024-10-07T10:27:43.506Z [INFO]: Fetched all users
+2024-10-07T10:27:55.548Z [INFO]: Fetched all users
+2024-10-07T10:27:57.677Z [INFO]: Fetched all users
+2024-10-07T10:28:03.518Z [INFO]: Fetched all users
+2024-10-07T10:28:08.382Z [INFO]: Fetched all users
+2024-10-07T10:28:12.579Z [INFO]: Fetched all users
+2024-10-07T10:28:14.199Z [INFO]: Fetched all users
+2024-10-07T10:28:23.923Z [INFO]: Fetched all users
+2024-10-07T10:28:45.052Z [INFO]: Fetched all certificates
+2024-10-07T10:28:45.103Z [INFO]: Fetched all certificates
+2024-10-07T10:28:46.918Z [INFO]: Fetched all courses
+2024-10-07T10:28:46.956Z [INFO]: Fetched all courses
+2024-10-07T10:28:48.103Z [INFO]: Fetched all users
+2024-10-07T10:28:48.143Z [INFO]: Fetched all users
