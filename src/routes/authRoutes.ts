@@ -36,14 +36,3 @@ router.post('/', login);
 
 export default router;
 
-
-
-
-// import express from 'express';
-// import { getauth_data } from '../controllers/authController';
-
-// const router = express.Router();
-
-// router.post('/', getauth_data);
-
-// export default router;

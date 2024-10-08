@@ -26,3 +26,8 @@
 {"level":"info","message":"Fetched all certificates"}
 {"level":"info","message":"Fetched all courses"}
 {"level":"info","message":"Fetched all courses"}
+{"level":"info","message":"User logged in: test1@gmail.com","timestamp":"2024-10-08T06:34:55.433Z"}
+{"level":"info","message":"Fetched all courses","timestamp":"2024-10-08T06:34:55.530Z"}
+{"level":"info","message":"Fetched all courses","timestamp":"2024-10-08T06:34:55.583Z"}
+{"level":"info","message":"Fetched all certificates","timestamp":"2024-10-08T06:35:20.264Z"}
+{"level":"info","message":"Fetched all certificates","timestamp":"2024-10-08T06:35:20.332Z"}
