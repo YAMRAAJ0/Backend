@@ -1,5 +1,5 @@
 import express from 'express';
-import { getauth_data } from '../controllers/authController';
+import { login } from '../controllers/authController';
 
 const router = express.Router();
 
@@ -32,7 +32,7 @@ const router = express.Router();
  *       400:
  *         description: Bad request
  */
-router.post('/', getauth_data);
+router.post('/', login);
 
 export default router;
 

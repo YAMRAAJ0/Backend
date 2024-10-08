@@ -1,3 +1,28 @@
+// // src/config/db.ts
+// import mongoose, { ConnectOptions } from 'mongoose';
+// import dotenv from 'dotenv';
+// const connectDB = async () => {
+//   try {
+//     await mongoose.connect(process.env.MONGO_URI as string, {
+//       useUnifiedTopology: true, // useUnifiedTopology is valid
+//     } as ConnectOptions);
+//     console.log('MongoDB connected');
+//   } catch (err) {
+//     console.error(err);
+//     process.exit(1);
+//   }
+// };
+
+// export default connectDB;  // Default export
+
+
+
+
+
+
+
+
+
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
