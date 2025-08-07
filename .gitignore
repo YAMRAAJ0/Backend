@@ -1,0 +1,14 @@
+# Ignore VSCode settings
+.vscode/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore log files
+*.log
+
+# Ignore Swagger generated file
+swagger.json
