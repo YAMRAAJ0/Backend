@@ -363,3 +363,32 @@
 2024-10-08T08:19:46.538Z [INFO]: Fetched all courses
 2024-10-08T08:19:49.611Z [INFO]: Fetched all users
 2024-10-08T08:19:49.667Z [INFO]: Fetched all users
+2025-08-07T15:21:40.987Z [INFO]: MongoDB Connected: devopsfarm-shard-00-00.9xfyi.mongodb.net
+2025-08-07T15:22:00.040Z [ERROR]: Registration error:  E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "tio@gmail.com" }
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "tio@gmail.com" }
+    at InsertOneOperation.execute (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\insert.ts:82:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\execute_operation.ts:263:14)
+    at async executeOperation (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\execute_operation.ts:109:12)
+    at async Collection.insertOne (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\collection.ts:277:12)
+2025-08-07T15:23:37.869Z [ERROR]: Registration error:  E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "tio@gmail.com" }
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "tio@gmail.com" }
+    at InsertOneOperation.execute (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\insert.ts:82:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\execute_operation.ts:263:14)
+    at async executeOperation (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\execute_operation.ts:109:12)
+    at async Collection.insertOne (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\collection.ts:277:12)
+2025-08-07T15:23:46.253Z [INFO]: MongoDB Connected: devopsfarm-shard-00-00.9xfyi.mongodb.net
+2025-08-07T15:23:51.083Z [ERROR]: Registration error:  E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "tio@gmail.com" }
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "tio@gmail.com" }
+    at InsertOneOperation.execute (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\insert.ts:82:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\execute_operation.ts:263:14)
+    at async executeOperation (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\operations\execute_operation.ts:109:12)
+    at async Collection.insertOne (D:\projecr\devopsfarm.in_validator\node_modules\mongodb\src\collection.ts:277:12)
+2025-08-07T15:24:00.843Z [INFO]: User registered: trilok@gmail.com
+2025-08-07T17:36:04.199Z [ERROR]: MongoDB Connection Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\projecr\devopsfarm.in_validator\node_modules\mongoose\lib\connection.js:909:11)
+    at NativeConnection.openUri (D:\projecr\devopsfarm.in_validator\node_modules\mongoose\lib\connection.js:860:11)
+    at async connectDB (D:\projecr\devopsfarm.in_validator\src\config\db.ts:10:18)
